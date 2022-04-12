@@ -1,0 +1,20 @@
+body{
+  font-size: 1rem;
+}
+
+.colorPrincipal{
+  color: #ffffff;
+  background-color: #591259;
+}
+
+.btn-colorPrincipal{
+  color: #ffffff;
+  background-color: #591259;
+  border-color: #591259;
+}
+
+.btn-colorPrincipal:hover{
+  color: #ffffff;
+  background-color: #460e46;
+  border-color: #460e46;
+}
