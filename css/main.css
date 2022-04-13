@@ -1,19 +1,23 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
   font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+
 }
 
-.colorPrincipal{
+.colorPrincipal {
   color: #ffffff;
   background-color: #591259;
 }
 
-.btn-colorPrincipal{
+.btn-colorPrincipal {
   color: #ffffff;
   background-color: #591259;
   border-color: #591259;
 }
 
-.btn-colorPrincipal:hover{
+.btn-colorPrincipal:hover {
   color: #ffffff;
   background-color: #460e46;
   border-color: #460e46;
@@ -26,22 +30,33 @@ body{
   border-top: 1px solid #ffffff;
 }
 
-.btn-colorSecundario{
+.btn-colorSecundario {
   color: #ffffff;
   background-color: #e5d80e;
   border-color: #e5d80e;
 }
 
-.btn-colorSecundario:hover{
+.btn-colorSecundario:hover {
   color: #ffffff;
   background-color: #9c930b;
   border-color: #9c930b;
 }
 
-#nav-navegacion{
+.colorTerciario {
   background-color: #484849;
 }
 
-a.enlaceNavbar:hover{
+li.nav-item:hover, .dropdown-item:focus,
+.dropdown-item:hover {
+  border-radius: 15px;
   background-color: #e5d80e;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list-group-item-secondary:hover{
+  background-color: #e5d80e;
+  cursor: pointer;
 }
