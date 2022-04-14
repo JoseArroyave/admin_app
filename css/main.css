@@ -11,6 +11,16 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
   background-color: #591259;
 }
 
+.colorSecundario {
+  color: #000000;
+  background-color: #e5d80e;
+}
+
+.colorTerciario {
+  color: #ffffff;
+  background-color: #484849;
+}
+
 .btn-colorPrincipal {
   color: #ffffff;
   background-color: #591259;
@@ -21,13 +31,6 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
   color: #ffffff;
   background-color: #460e46;
   border-color: #460e46;
-}
-
-.dropdown-divider {
-  height: 0;
-  margin: 0.5rem 0;
-  overflow: hidden;
-  border-top: 1px solid #ffffff;
 }
 
 .btn-colorSecundario {
@@ -42,8 +45,21 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
   border-color: #9c930b;
 }
 
-.colorTerciario {
-  background-color: #484849;
+.bg-purple{
+  color: #ffffff;
+  background-color: #59359a;
+}
+
+.bg-yellow {
+  color: #ffffff;
+  background-color: #cc9a06;
+}
+
+.dropdown-divider {
+  height: 0;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  border-top: 1px solid #ffffff;
 }
 
 li.nav-item:hover, .dropdown-item:focus,
@@ -59,4 +75,13 @@ a {
 .list-group-item-secondary:hover{
   background-color: #e5d80e;
   cursor: pointer;
+}
+
+.centerWhite{
+  color:#ffffff;
+  text-align: center;
+}
+
+.fontAwEcommerce{
+  font-size: 4rem;
 }
