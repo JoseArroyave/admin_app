@@ -10,7 +10,7 @@ $(document).ready(function () {
 
   var tables = function (path) {
     // Paginación 
-    if (path == '/admin_app/index.html') {
+    if (path == ('/admin_app/index.html' || '/admin_app/')) {
       var tableId = '#priceTable'
     } else if (path == '/admin_app/categorias.html') {
       var tableId = "#categoryTable"
@@ -56,7 +56,7 @@ $(document).ready(function () {
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {
         cancelButton: 'btn btn-danger',
-        confirmButton: 'btn btn-success'
+        confirmButton: 'btn btn-success'  
       },
       buttonsStyling: false
     })
