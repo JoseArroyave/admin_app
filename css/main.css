@@ -68,6 +68,11 @@ li.nav-item:hover, .dropdown-item:focus,
   background-color: #e5d80e;
 }
 
+.active{
+  background-color: #e5d80e !important;
+  border: 1px solid #e5d80e !important;
+}
+
 a {
   text-decoration: none;
 }
@@ -84,4 +89,10 @@ a {
 
 .fontAwEcommerce{
   font-size: 4rem;
+}
+
+.breadcrumb-row{
+  margin: 0;
+  background-color: #e2e3e5;
+  border-radius: 50px;
 }
