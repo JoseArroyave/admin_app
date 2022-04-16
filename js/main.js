@@ -56,10 +56,10 @@ $(document).ready(function () {
       column.visible(!column.visible());
     }
 
-    if (path == '/categorias.html') {
+    if (path == '/admin_app/categorias.html') {
       dataColumn(tableCategory)
 
-    } else if (path == '/index.html') {
+    } else if (path == '/admin_app/index.html') {
       dataColumn(tablePrice)
     }
   });
