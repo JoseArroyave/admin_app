@@ -8,60 +8,46 @@ $(document).ready(function () {
     console.log(aBuscar)
   })
 
-  // Parametros lenguaje tablas
-  let parametrosLanguageDataTable = {
-    paginate: {
-      next: "Siguiente",
-      previous: "Anterior",
-      last: "Último",
-      first: "Primero"
-    },
-    info: "Mostrando _START_ a _END_ de _TOTAL_ de resultados",
-    emptyTable: "No hay registros",
-    infoEmpty: "0 registros",
-    search: "Buscar"
+  var tables = function (path) {
+    // Paginación 
+    if (path == '/admin_app/index.html') {
+      var tableId = '#priceTable'
+    } else if (path == '/admin_app/categorias.html') {
+      var tableId = "#categoryTable"
+    } else if (path == '/admin_app/productos.html') {
+      var tableId = "#lastProductsTable"
+    }
+
+    // Paginacion según table id
+    return $(tableId).DataTable({
+      language: {
+        paginate: {
+          next: "Siguiente",
+          previous: "Anterior",
+          last: "Último",
+          first: "Primero"
+        },
+        info: "Mostrando _START_ a _END_ de _TOTAL_ de resultados",
+        emptyTable: "No hay registros",
+        infoEmpty: "0 registros",
+        search: "Buscar"
+      },
+      "paging": true,
+      "responsive": true
+    })
   }
 
-  // Parametros logica tabla precios
-  let parametrosLogicDataTablePrice = {
-    "scrollY": "412px",
-    "paging": true,
-    "responsive": true
-  }
-
-  // Parametros logica tabla categoria
-  let parametrosLogicDataTableCategory = {
-    "scrollY": "277px",
-    "paging": true,
-    "responsive": true
-  }
-
-  // Paginación tabla de precios
-  var tablePrice = $("#priceTable").DataTable({ language: parametrosLanguageDataTable, parametrosLogicDataTablePrice });
-
-  // Paginación tabla de categorias
-  var tableCategory = $("#categoryTable").DataTable({ language: parametrosLanguageDataTable, parametrosLogicDataTableCategory });
-
-  let path = window.location.pathname;
+  var table = tables(window.location.pathname)
 
   // Mostrar y ocultar columnas
   $('a.toggle-vis').on('click', function (e) {
     e.preventDefault();
 
-    let dataColumn = function (table) {
-      // Get the column API object
-      let column = table.column($(this).attr('data-column'));
+    // Get the column API object
+    let column = table.column($(this).attr('data-column'));
 
-      // Toggle the visibility
-      column.visible(!column.visible());
-    }
-
-    if (path == '/admin_app/categorias.html') {
-      dataColumn(tableCategory)
-
-    } else if (path == '/admin_app/index.html') {
-      dataColumn(tablePrice)
-    }
+    // Toggle the visibility
+    column.visible(!column.visible());
   });
 
   // Delete btn in categorias.html
