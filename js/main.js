@@ -8,36 +8,34 @@ $(document).ready(function () {
     console.log(aBuscar)
   })
 
-  var tables = function (path) {
-    // Paginación 
-    if (path == '/admin_app/index.html' || '/admin_app/') {
-      var tableId = '#priceTable'
-    } else if (path == '/admin_app/categorias.html') {
-      var tableId = "#categoryTable"
-    } else if (path == '/admin_app/productos.html') {
-      var tableId = "#lastProductsTable"
-    }
+  var path = window.location.pathname
 
-    // Paginacion según table id
-    return $(tableId).DataTable({
-      language: {
-        paginate: {
-          next: "Siguiente",
-          previous: "Anterior",
-          last: "Último",
-          first: "Primero"
-        },
-        info: "Mostrando _START_ a _END_ de _TOTAL_ de resultados",
-        emptyTable: "No hay registros",
-        infoEmpty: "0 registros",
-        search: "Buscar"
-      },
-      "paging": true,
-      "responsive": true
-    })
+  // Paginación 
+  if (path == '/admin_app/index.html') {
+    var tableId = '#priceTable'
+  } else if (path == '/admin_app/categorias.html') {
+    var tableId = "#categoryTable"
+  } else if (path == '/admin_app/productos.html') {
+    var tableId = "#lastProductsTable"
   }
 
-  var table = tables(window.location.pathname)
+  // Paginacion según table id
+  var table = $(tableId).DataTable({
+    language: {
+      paginate: {
+        next: "Siguiente",
+        previous: "Anterior",
+        last: "Último",
+        first: "Primero"
+      },
+      info: "Mostrando _START_ a _END_ de _TOTAL_ de resultados",
+      emptyTable: "No hay registros",
+      infoEmpty: "0 registros",
+      search: "Buscar"
+    },
+    "paging": true,
+    "responsive": true
+  })
 
   // Mostrar y ocultar columnas
   $('a.toggle-vis').on('click', function (e) {
@@ -56,7 +54,7 @@ $(document).ready(function () {
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {
         cancelButton: 'btn btn-danger',
-        confirmButton: 'btn btn-success'  
+        confirmButton: 'btn btn-success'
       },
       buttonsStyling: false
     })
