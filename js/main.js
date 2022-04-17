@@ -11,7 +11,7 @@ $(document).ready(function () {
   var path = window.location.pathname
 
   // Paginación 
-  if (path == '/admin_app/index.html') {
+  if (path == '/admin_app/index.html' || '/admin_app/') {
     var tableId = '#priceTable'
   } else if (path == '/admin_app/categorias.html') {
     var tableId = "#categoryTable"
