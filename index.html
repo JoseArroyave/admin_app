@@ -8,8 +8,6 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <!-- Data Tables -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.11.5/r-2.2.9/datatables.min.css" />
   <!-- Main -->
   <link rel="stylesheet" href="css/main.css">
 
@@ -18,565 +16,64 @@
 
 <body>
 
-  <!-- Barra de navegacion -->
-  <nav class="navbar navbar-expand-md navbar-dark p-2 sticky-top colorTerciario">
-    <div class="container-fluid">
-      <img src="img/logo_panel.png" alt="logo panel" class="img-fluid">
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto text-center">
-          <li class="nav-item active-navbar">
-            <a class="nav-link text-white">Inicio</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle text-white" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tienda</a>
-            <ul class="dropdown-menu bg-secondary text-center text-md-start" aria-labelledby="navbarDropdown">
-              <li class="enlaceNavbar"><a href="categorias.html"
-                  class="dropdown-item nav-link text-white px-sm-4">Categorías</a></li>
-              <li class="enlaceNavbar"><a href="inventario.html"
-                  class="dropdown-item nav-link text-white px-sm-4">Inventario</a>
-              </li>
-              <li class="enlaceNavbar"><a href="pedidos.html"
-                  class="dropdown-item nav-link text-white px-sm-4">Pedidos</a>
-              </li>
-              <li class="enlaceNavbar"><a href="cupones.html"
-                  class="dropdown-item nav-link text-white px-sm-4">Cupones</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle text-white" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administración</a>
-            <ul class="dropdown-menu bg-secondary text-center text-md-start" aria-labelledby="navbarDropdown">
-              <li class="enlaceNavbar"><a href="usuarios.html"
-                  class="dropdown-item nav-link text-white px-sm-4">Usuarios</a>
-              </li>
-              <li class="enlaceNavbar"><a href="configuracion.html"
-                  class="dropdown-item nav-link text-white px-sm-4">Configuracion</a>
-              </li>
-              <li class="enlaceNavbar"><a href="roles.html" class="dropdown-item nav-link text-white px-sm-4">Roles</a>
-              </li>
-              <li class="enlaceNavbar">
-                <hr class="dropdown-divider ">
-              </li><a href="sistema.html" class="dropdown-item nav-link text-white px-sm-4">Sistema</a>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle text-white" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fa-solid fa-user"></i> Perfil</a>
-            <ul class="dropdown-menu bg-secondary text-center text-md-start" aria-labelledby="navbarDropdown">
-              <li class="enlaceNavbar"><a href="perfil.html" class="dropdown-item nav-link text-white px-sm-4">
-                  <i class="fa-solid fa-circle-user"></i> Tus datos</a></li>
-              <li class="enlaceNavbar"><a href="configuraciones.html" class="dropdown-item nav-link text-white px-sm-4">
-                  <i class="fa-solid fa-user-gear"></i> Configuraciones</a>
-              </li>
-              <li class="enlaceNavbar"><a href="login.html" class="dropdown-item nav-link text-white px-sm-4">
-                  <i class="fa-solid fa-user-xmark"></i> Salir</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <form class="d-flex justify-content-center pt-2 pt-md-0">
-              <div class="row">
-                <div class="input-group">
-                  <input class="form-control" type="search" placeholder="Buscar" aria-label="Search" id="navbarBuscar">
-                  <span class="btn btn-colorSecundario btnNavbarBuscar" id="basic-addon1">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </span>
-                </div>
-              </div>
-            </form>
-          </li>
-        </ul>
-      </div>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0 fixed-top">
+    <div class="container">
+      <a href="login.html" class="navbar-brand">App Commerce</a>
     </div>
   </nav>
 
-  <div class="container px-4 my-3">
-    <div class="row border breadcrumb-row">
-      <div class="col-12">
-        <div class="card-body p-2">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb m-0">
-              <li class="breadcrumb-item" aria-current="page">Inicio</li>
-            </ol>
-          </nav>
+  <img src="img/logo_login.png" alt="logo" class="img-fluid mx-auto d-block my-5">
+
+  <!-- Login -->
+  <section id="login">
+    <div class="container">
+      <div class="row mx-3 mx-md-0 justify-content-center">
+        <div class="col-12 col-md-6">
+          <div class="card">
+            <div class="card-header colorPrincipal">
+              <h4 class="text-center">Acceso Usuarios</h4>
+            </div>
+            <div class="card-body">
+              <form method="POST">
+                <div class="form-group">
+                  <div class="row p-3 justify-content-md-between">
+                    <div class="col-12 col-md-auto">
+                      <label for="email">Email:</label>
+                    </div>
+                    <div class="col-12 col-md-auto">
+                      <input type="email" name="email" id="emailIngreso" class="form-control" required
+                        placeholder="Ingresa tu email">
+                    </div>
+                  </div>
+                  <div class="row p-3 justify-content-md-between">
+                    <div class="col-12 col-md-auto">
+                      <label for="password">Contraseña:</label>
+                    </div>
+                    <div class="col-12 col-md-auto">
+                      <input type="password" name="password" id="passwordIngreso" class="form-control" required
+                        placeholder="Ingresa tu password">
+                    </div>
+                  </div>
+                  <div class="p-3 text-center">
+                    <button type="submit" class="btn btn-colorPrincipal btnIngresar"><i class="fa-solid fa-user"></i>
+                      Ingresar</button>
+                    <br>
+                    <button type="submit" class="btn btn-colorPrincipal btnIngresarInvitado mt-2"><i
+                        class="fa-solid fa-user"></i>
+                      Ingresar como invitado</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Layout principal -->
-  <div class="container-fluid px-4">
-    <div class="row">
-
-      <!-- Layout de 3 columnas -->
-      <div class="col-12 col-md-3">
-
-        <!-- Menu principal -->
-        <div class="navbar-expand-md navbar-dark border">
-          <div class="card-header colorTerciario">
-            <div class="row g-5">
-              <div class="col-2">
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
-                  aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              </div>
-              <div class="col-8 align-self-center p-md-0">
-                <h6 class="m-1 text-center">Menú principal</h>
-              </div>
-            </div>
-          </div>
-          <div class="collapse navbar-collapse" id="menuPrincipal">
-            <div class="card-body">
-              <ul class="list-group">
-                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
-                  <a href="categorias.html" class="text-dark">Categorías
-                  </a><span class="badge rounded-pill bg-primary">10</span>
-                </li>
-                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
-                  <a href="inventario.html" class="text-dark">Inventario
-                  </a><span class="badge rounded-pill bg-secondary">200</span>
-                </li>
-                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
-                  <a href="pedidos.html" class="text-dark">Pedidos
-                  </a><span class="badge rounded-pill bg-success">14</span>
-                </li>
-                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
-                  <a href="cupones.html" class="text-dark">Cupones
-                  </a><span class="badge rounded-pill bg-warning">20</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Menu administracion -->
-        <div class="navbar-expand-md navbar-dark mt-4 border">
-          <div class="card-header colorTerciario">
-            <div class="row g-5">
-              <div class="col-2">
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuAdministracion"
-                  aria-controls="menuAdministracion" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              </div>
-              <div class="col-8 align-self-center p-md-0">
-                <h6 class="m-1 text-center">Administración</h>
-              </div>
-            </div>
-          </div>
-          <div class="collapse navbar-collapse" id="menuAdministracion">
-            <div class="card-body">
-              <ul class="list-group">
-                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
-                  <a href="#" class="text-dark">Usuarios</a>
-                </li>
-                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
-                  <a href="#" class="text-dark">Configuraciones</a>
-                </li>
-                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
-                  <a href="#" class="text-dark">Roles</a>
-                </li>
-                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
-                  <a href="#" class="text-dark">Sistema</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Layout de 9 columnas -->
-      <div class="col-12 col-md-9">
-
-        <!-- Panel de control -->
-        <div class="card centerWhite mt-4 mt-md-0">
-          <div class="card-header colorSecundario">
-            <h6 class="m-1"><i class="fa-solid fa-cart-shopping"></i> Panel de control - Ecommerce</h>
-          </div>
-          <div class="card-body">
-            <div class="d-md-flex flex-wrap gap-2 justify-content-evenly">
-              <div class="p-3 bg-success rounded">
-                <i class="fa-solid fa-cart-shopping fontAwEcommerce"></i>
-                <h4 class="m-2">Pedidos</h4>
-                <div class="card-footer p-0 border rounded">
-                  <p class="p-2 m-0">
-                    <a href="pedidos.html" class="centerWhite">14 pedidos nuevos</a>
-                  </p>
-                </div>
-              </div>
-              <div class="p-3 bg-yellow rounded my-3 my-md-0">
-                <i class="fa-solid fa-ticket-simple fontAwEcommerce"></i>
-                <h4 class="m-2">Cupones</h4>
-                <div class="card-footer p-0 border rounded">
-                  <p class="p-2 m-0">
-                    <a href="cupones.html" class="centerWhite">20 cupones nuevos</a>
-                  </p>
-                </div>
-              </div>
-              <div class="p-3 bg-purple rounded">
-                <i class="fa-solid fa-tags fontAwEcommerce"></i>
-                <h4 class="m-2">Productos</h4>
-                <div class="card-footer p-0 border rounded">
-                  <p class="p-2 m-0">
-                    <a href="inventario.html" class="centerWhite">200 productos nuevos</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tabla de precios -->
-        <div class="card centerWhite mt-4">
-          <div class="card-header colorPrincipal">
-            <h6 class="m-1"><i class="fa-solid fa-money-bill-wave"></i> Tabla de precios</h>
-          </div>
-          <div class="card-body text-black">
-            <div class="text-black">Mostrar columna:
-              <a class="toggle-vis" data-column="0">#</a> -
-              <a class="toggle-vis" data-column="1">Productos</a> -
-              <a class="toggle-vis" data-column="2">Talla</a> -
-              <a class="toggle-vis" data-column="3">Precio</a>
-            </div>
-            <table class="table table-bordered table-hover table-striped" id="priceTable">
-              <thead class="table-dark">
-                <tr>
-                  <th>#</th>
-                  <th>Productos</th>
-                  <th>Talla</th>
-                  <th>Precio</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Camisa 1</td>
-                  <td>X</td>
-                  <td>$ 40.000</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Camisa 2</td>
-                  <td>X</td>
-                  <td>$ 40.000</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Camisa 3</td>
-                  <td>X</td>
-                  <td>$ 40.000</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Camisa 4</td>
-                  <td>X</td>
-                  <td>$ 40.000</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Camisa 5</td>
-                  <td>X</td>
-                  <td>$ 40.000</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>Camisa 6</td>
-                  <td>X</td>
-                  <td>$ 40.000</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>Camisa 7</td>
-                  <td>X</td>
-                  <td>$ 40.000</td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>Camisa 8</td>
-                  <td>X</td>
-                  <td>$ 40.000</td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>Camisa 9</td>
-                  <td>X</td>
-                  <td>$ 40.000</td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>Camisa 10</td>
-                  <td>X</td>
-                  <td>$ 40.000</td>
-                </tr>
-                <tr>
-                  <td>11</td>
-                  <td>Jean 1</td>
-                  <td>X</td>
-                  <td>$ 65.000</td>
-                </tr>
-                <tr>
-                  <td>12</td>
-                  <td>Jean 2</td>
-                  <td>X</td>
-                  <td>$ 65.000</td>
-                </tr>
-                <tr>
-                  <td>13</td>
-                  <td>Jean 3</td>
-                  <td>X</td>
-                  <td>$ 65.000</td>
-                </tr>
-                <tr>
-                  <td>14</td>
-                  <td>Jean 4</td>
-                  <td>X</td>
-                  <td>$ 65.000</td>
-                </tr>
-                <tr>
-                  <td>15</td>
-                  <td>Jean 5</td>
-                  <td>X</td>
-                  <td>$ 65.000</td>
-                </tr>
-                <tr>
-                  <td>16</td>
-                  <td>Jean 6</td>
-                  <td>X</td>
-                  <td>$ 65.000</td>
-                </tr>
-                <tr>
-                  <td>17</td>
-                  <td>Jean 7</td>
-                  <td>X</td>
-                  <td>$ 65.000</td>
-                </tr>
-                <tr>
-                  <td>18</td>
-                  <td>Jean 8</td>
-                  <td>X</td>
-                  <td>$ 65.000</td>
-                </tr>
-                <tr>
-                  <td>19</td>
-                  <td>Jean 9</td>
-                  <td>X</td>
-                  <td>$ 65.000</td>
-                </tr>
-                <tr>
-                  <td>20</td>
-                  <td>Jean 10</td>
-                  <td>X</td>
-                  <td>$ 65.000</td>
-                </tr>
-                <tr>
-                  <td>21</td>
-                  <td>Cardigan 1</td>
-                  <td>X</td>
-                  <td>$ 85.000</td>
-                </tr>
-                <tr>
-                  <td>22</td>
-                  <td>Cardigan 2</td>
-                  <td>X</td>
-                  <td>$ 85.000</td>
-                </tr>
-                <tr>
-                  <td>23</td>
-                  <td>Cardigan 3</td>
-                  <td>X</td>
-                  <td>$ 85.000</td>
-                </tr>
-                <tr>
-                  <td>24</td>
-                  <td>Cardigan 4</td>
-                  <td>X</td>
-                  <td>$ 85.000</td>
-                </tr>
-                <tr>
-                  <td>25</td>
-                  <td>Cardigan 5</td>
-                  <td>X</td>
-                  <td>$ 85.000</td>
-                </tr>
-                <tr>
-                  <td>26</td>
-                  <td>Cardigan 6</td>
-                  <td>X</td>
-                  <td>$ 85.000</td>
-                </tr>
-                <tr>
-                  <td>27</td>
-                  <td>Cardigan 7</td>
-                  <td>X</td>
-                  <td>$ 85.000</td>
-                </tr>
-                <tr>
-                  <td>28</td>
-                  <td>Cardigan 8</td>
-                  <td>X</td>
-                  <td>$ 85.000</td>
-                </tr>
-                <tr>
-                  <td>29</td>
-                  <td>Cardigan 9</td>
-                  <td>X</td>
-                  <td>$ 85.000</td>
-                </tr>
-                <tr>
-                  <td>30</td>
-                  <td>Cardigan 10</td>
-                  <td>X</td>
-                  <td>$ 85.000</td>
-                </tr>
-                <tr>
-                  <td>31</td>
-                  <td>Jogger cargo 1</td>
-                  <td>X</td>
-                  <td>$ 110.000</td>
-                </tr>
-                <tr>
-                  <td>32</td>
-                  <td>Jogger cargo 2</td>
-                  <td>X</td>
-                  <td>$ 110.000</td>
-                </tr>
-                <tr>
-                  <td>33</td>
-                  <td>Jogger cargo 3</td>
-                  <td>X</td>
-                  <td>$ 110.000</td>
-                </tr>
-                <tr>
-                  <td>34</td>
-                  <td>Jogger cargo 4</td>
-                  <td>X</td>
-                  <td>$ 110.000</td>
-                </tr>
-                <tr>
-                  <td>35</td>
-                  <td>Jogger cargo 5</td>
-                  <td>X</td>
-                  <td>$ 110.000</td>
-                </tr>
-                <tr>
-                  <td>36</td>
-                  <td>Jogger cargo 6</td>
-                  <td>X</td>
-                  <td>$ 110.000</td>
-                </tr>
-                <tr>
-                  <td>37</td>
-                  <td>Jogger cargo 7</td>
-                  <td>X</td>
-                  <td>$ 110.000</td>
-                </tr>
-                <tr>
-                  <td>38</td>
-                  <td>Jogger cargo 8</td>
-                  <td>X</td>
-                  <td>$ 110.000</td>
-                </tr>
-                <tr>
-                  <td>39</td>
-                  <td>Jogger cargo 9</td>
-                  <td>X</td>
-                  <td>$ 110.000</td>
-                </tr>
-                <tr>
-                  <td>40</td>
-                  <td>Jogger cargo 10</td>
-                  <td>X</td>
-                  <td>$ 110.000</td>
-                </tr>
-                <tr>
-                  <td>41</td>
-                  <td>Chaqueta cuero 1</td>
-                  <td>X</td>
-                  <td>$ 150.000</td>
-                </tr>
-                <tr>
-                  <td>42</td>
-                  <td>Chaqueta cuero 2</td>
-                  <td>X</td>
-                  <td>$ 150.000</td>
-                </tr>
-                <tr>
-                  <td>43</td>
-                  <td>Chaqueta cuero 3</td>
-                  <td>X</td>
-                  <td>$ 150.000</td>
-                </tr>
-                <tr>
-                  <td>44</td>
-                  <td>Chaqueta cuero 4</td>
-                  <td>X</td>
-                  <td>$ 150.000</td>
-                </tr>
-                <tr>
-                  <td>45</td>
-                  <td>Chaqueta cuero 5</td>
-                  <td>X</td>
-                  <td>$ 150.000</td>
-                </tr>
-                <tr>
-                  <td>46</td>
-                  <td>Chaqueta cuero 6</td>
-                  <td>X</td>
-                  <td>$ 150.000</td>
-                </tr>
-                <tr>
-                  <td>47</td>
-                  <td>Chaqueta cuero 7</td>
-                  <td>X</td>
-                  <td>$ 150.000</td>
-                </tr>
-                <tr>
-                  <td>48</td>
-                  <td>Chaqueta cuero 8</td>
-                  <td>X</td>
-                  <td>$ 150.000</td>
-                </tr>
-                <tr>
-                  <td>49</td>
-                  <td>Chaqueta cuero 9</td>
-                  <td>X</td>
-                  <td>$ 150.000</td>
-                </tr>
-                <tr>
-                  <td>50</td>
-                  <td>Chaqueta cuero 10</td>
-                  <td>X</td>
-                  <td>$ 150.000</td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <th>#</th>
-                  <th>Producto</th>
-                  <th>Talla</th>
-                  <th>Precio</th>
-                </tr>
-              </tfoot>
-            </table>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
 
   <!-- Footer -->
-  <footer id="main-footer" class="colorTerciario p-1 mt-4">
+  <footer id="main-footer" class="bg-dark text-white p-1 fixed-bottom">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -600,8 +97,6 @@
   <script src="https://kit.fontawesome.com/0e4230e118.js" crossorigin="anonymous"></script>
   <!-- SweetAlert -->
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <!-- DataTable -->
-  <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.11.5/r-2.2.9/datatables.min.js"></script>
   <!-- Main -->
   <script src="js/main.js"></script>
 </body>

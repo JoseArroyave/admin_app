@@ -30,16 +30,15 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto text-center">
           <li class="nav-item">
-            <a href="index.html" class="nav-link text-white">Inicio</a>
+            <a href="panel.html" class="nav-link text-white">Inicio</a>
           </li>
           <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle text-white" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tienda</a>
+            <a class="nav-link dropdown-toggle text-white" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Tienda</a>
             <ul class="dropdown-menu bg-secondary text-center text-md-start" aria-labelledby="navbarDropdown">
               <li class="enlaceNavbar"><a href="categorias.html"
                   class="dropdown-item nav-link text-white px-sm-4">Categorías</a></li>
-              <li class="enlaceNavbar active-navbar"><a
-                  class="dropdown-item nav-link text-white px-sm-4">Inventario</a>
+              <li class="enlaceNavbar active-navbar"><a class="dropdown-item nav-link text-white px-sm-4">Inventario</a>
               </li>
               <li class="enlaceNavbar"><a href="pedidos.html"
                   class="dropdown-item nav-link text-white px-sm-4">Pedidos</a>
@@ -50,30 +49,28 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle text-white" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administración</a>
+            <a class="nav-link dropdown-toggle text-white" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Administración</a>
             <ul class="dropdown-menu bg-secondary text-center text-md-start" aria-labelledby="navbarDropdown">
-              <li class="enlaceNavbar"><a href="usuarios.html"
-                  class="dropdown-item nav-link text-white px-sm-4">Usuarios</a>
+              <li class="enlaceNavbar"><a class="dropdown-item nav-link text-white px-sm-4">Usuarios</a>
               </li>
-              <li class="enlaceNavbar"><a href="configuracion.html"
-                  class="dropdown-item nav-link text-white px-sm-4">Configuracion</a>
+              <li class="enlaceNavbar"><a class="dropdown-item nav-link text-white px-sm-4">Configuracion</a>
               </li>
-              <li class="enlaceNavbar"><a href="roles.html" class="dropdown-item nav-link text-white px-sm-4">Roles</a>
+              <li class="enlaceNavbar"><a class="dropdown-item nav-link text-white px-sm-4">Roles</a>
               </li>
               <li class="enlaceNavbar">
                 <hr class="dropdown-divider ">
-              </li><a href="sistema.html" class="dropdown-item nav-link text-white px-sm-4">Sistema</a>
+              </li><a class="dropdown-item nav-link text-white px-sm-4">Sistema</a>
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle text-white" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-white" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
               <i class="fa-solid fa-user"></i> Perfil</a>
             <ul class="dropdown-menu bg-secondary text-center text-md-start" aria-labelledby="navbarDropdown">
               <li class="enlaceNavbar"><a href="perfil.html" class="dropdown-item nav-link text-white px-sm-4">
                   <i class="fa-solid fa-circle-user"></i> Tus datos</a></li>
-              <li class="enlaceNavbar"><a href="configuraciones.html" class="dropdown-item nav-link text-white px-sm-4">
+              <li class="enlaceNavbar"><a class="dropdown-item nav-link text-white px-sm-4">
                   <i class="fa-solid fa-user-gear"></i> Configuraciones</a>
               </li>
               <li class="enlaceNavbar"><a href="login.html" class="dropdown-item nav-link text-white px-sm-4">
@@ -104,7 +101,7 @@
         <div class="card-body p-2">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb m-0">
-              <li class="breadcrumb-item"><a href="index.html" aria-current="page">Inicio</a></li>
+              <li class="breadcrumb-item"><a href="panel.html" aria-current="page">Inicio</a></li>
               <li class="breadcrumb-item" aria-current="page">Inventario</li>
             </ol>
           </nav>
@@ -179,16 +176,16 @@
             <div class="card-body">
               <ul class="list-group">
                 <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
-                  <a href="#" class="text-dark">Usuarios</a>
+                  <a class="text-dark">Usuarios</a>
                 </li>
                 <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
-                  <a href="#" class="text-dark">Configuraciones</a>
+                  <a class="text-dark">Configuraciones</a>
                 </li>
                 <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
-                  <a href="#" class="text-dark">Roles</a>
+                  <a class="text-dark">Roles</a>
                 </li>
                 <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">
-                  <a href="#" class="text-dark">Sistema</a>
+                  <a class="text-dark">Sistema</a>
                 </li>
               </ul>
             </div>
@@ -200,7 +197,7 @@
       <!-- Layout de 9 columnas -->
       <div class="col-12 col-md-9">
 
-        <!-- Tabla de precios -->
+        <!-- Inventario -->
         <div class="card centerWhite mt-4 mt-md-0">
           <div class="card-header colorPrincipal">
             <h6 class="m-1"><i class="fa-solid fa-table"></i> Ultimos Productos</h>
@@ -219,8 +216,9 @@
               <a class="toggle-vis" data-column="1">Productos</a> -
               <a class="toggle-vis" data-column="2">Talla</a> -
               <a class="toggle-vis" data-column="3">Precio</a> -
-              <a class="toggle-vis" data-column="4">Estado</a> -
-              <a class="toggle-vis" data-column="5">Acciones</a>
+              <a class="toggle-vis" data-column="4">Cantidad</a> -
+              <a class="toggle-vis" data-column="5">Estado</a> -
+              <a class="toggle-vis" data-column="6">Acciones</a>
             </div>
             <table class="table table-bordered table-hover table-striped" id="lastProductsTable">
               <thead class="table-dark">
@@ -229,6 +227,7 @@
                   <th>Productos</th>
                   <th>Talla</th>
                   <th>Precio</th>
+                  <th>Cantidad</th>
                   <th>Estado</th>
                   <th>Acciones</th>
                 </tr>
@@ -239,6 +238,7 @@
                   <td>Camisa 1</td>
                   <td>X</td>
                   <td>$ 40.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -255,6 +255,7 @@
                   <td>Camisa 2</td>
                   <td>X</td>
                   <td>$ 40.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -271,6 +272,7 @@
                   <td>Camisa 3</td>
                   <td>X</td>
                   <td>$ 40.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -287,6 +289,7 @@
                   <td>Camisa 4</td>
                   <td>X</td>
                   <td>$ 40.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -303,6 +306,7 @@
                   <td>Camisa 5</td>
                   <td>X</td>
                   <td>$ 40.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -319,6 +323,7 @@
                   <td>Camisa 6</td>
                   <td>X</td>
                   <td>$ 40.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -335,6 +340,7 @@
                   <td>Camisa 7</td>
                   <td>X</td>
                   <td>$ 40.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -351,6 +357,7 @@
                   <td>Camisa 8</td>
                   <td>X</td>
                   <td>$ 40.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -367,6 +374,7 @@
                   <td>Camisa 9</td>
                   <td>X</td>
                   <td>$ 40.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -383,6 +391,7 @@
                   <td>Camisa 10</td>
                   <td>X</td>
                   <td>$ 40.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -399,6 +408,7 @@
                   <td>Jean 1</td>
                   <td>X</td>
                   <td>$ 65.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -415,6 +425,7 @@
                   <td>Jean 2</td>
                   <td>X</td>
                   <td>$ 65.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -431,6 +442,7 @@
                   <td>Jean 3</td>
                   <td>X</td>
                   <td>$ 65.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -447,6 +459,7 @@
                   <td>Jean 4</td>
                   <td>X</td>
                   <td>$ 65.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -463,6 +476,7 @@
                   <td>Jean 5</td>
                   <td>X</td>
                   <td>$ 65.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -479,6 +493,7 @@
                   <td>Jean 6</td>
                   <td>X</td>
                   <td>$ 65.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -495,6 +510,7 @@
                   <td>Jean 7</td>
                   <td>X</td>
                   <td>$ 65.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -511,6 +527,7 @@
                   <td>Jean 8</td>
                   <td>X</td>
                   <td>$ 65.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -527,6 +544,7 @@
                   <td>Jean 9</td>
                   <td>X</td>
                   <td>$ 65.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -543,6 +561,7 @@
                   <td>Jean 10</td>
                   <td>X</td>
                   <td>$ 65.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -559,6 +578,7 @@
                   <td>Cardigan 1</td>
                   <td>X</td>
                   <td>$ 85.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -575,6 +595,7 @@
                   <td>Cardigan 2</td>
                   <td>X</td>
                   <td>$ 85.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -591,6 +612,7 @@
                   <td>Cardigan 3</td>
                   <td>X</td>
                   <td>$ 85.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -607,6 +629,7 @@
                   <td>Cardigan 4</td>
                   <td>X</td>
                   <td>$ 85.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -623,6 +646,7 @@
                   <td>Cardigan 5</td>
                   <td>X</td>
                   <td>$ 85.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -639,6 +663,7 @@
                   <td>Cardigan 6</td>
                   <td>X</td>
                   <td>$ 85.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -655,6 +680,7 @@
                   <td>Cardigan 7</td>
                   <td>X</td>
                   <td>$ 85.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -671,6 +697,7 @@
                   <td>Cardigan 8</td>
                   <td>X</td>
                   <td>$ 85.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -687,6 +714,7 @@
                   <td>Cardigan 9</td>
                   <td>X</td>
                   <td>$ 85.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -703,6 +731,7 @@
                   <td>Cardigan 10</td>
                   <td>X</td>
                   <td>$ 85.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -719,6 +748,7 @@
                   <td>Jogger cargo 1</td>
                   <td>X</td>
                   <td>$ 110.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -735,6 +765,7 @@
                   <td>Jogger cargo 2</td>
                   <td>X</td>
                   <td>$ 110.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -751,6 +782,7 @@
                   <td>Jogger cargo 3</td>
                   <td>X</td>
                   <td>$ 110.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -767,6 +799,7 @@
                   <td>Jogger cargo 4</td>
                   <td>X</td>
                   <td>$ 110.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -783,6 +816,7 @@
                   <td>Jogger cargo 5</td>
                   <td>X</td>
                   <td>$ 110.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -799,6 +833,7 @@
                   <td>Jogger cargo 6</td>
                   <td>X</td>
                   <td>$ 110.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -815,6 +850,7 @@
                   <td>Jogger cargo 7</td>
                   <td>X</td>
                   <td>$ 110.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -831,6 +867,7 @@
                   <td>Jogger cargo 8</td>
                   <td>X</td>
                   <td>$ 110.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -847,6 +884,7 @@
                   <td>Jogger cargo 9</td>
                   <td>X</td>
                   <td>$ 110.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -863,6 +901,7 @@
                   <td>Jogger cargo 10</td>
                   <td>X</td>
                   <td>$ 110.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -879,6 +918,7 @@
                   <td>Chaqueta cuero 1</td>
                   <td>X</td>
                   <td>$ 150.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -895,6 +935,7 @@
                   <td>Chaqueta cuero 2</td>
                   <td>X</td>
                   <td>$ 150.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -911,6 +952,7 @@
                   <td>Chaqueta cuero 3</td>
                   <td>X</td>
                   <td>$ 150.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -927,6 +969,7 @@
                   <td>Chaqueta cuero 4</td>
                   <td>X</td>
                   <td>$ 150.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -943,6 +986,7 @@
                   <td>Chaqueta cuero 5</td>
                   <td>X</td>
                   <td>$ 150.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -959,6 +1003,7 @@
                   <td>Chaqueta cuero 6</td>
                   <td>X</td>
                   <td>$ 150.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -975,6 +1020,7 @@
                   <td>Chaqueta cuero 7</td>
                   <td>X</td>
                   <td>$ 150.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -991,6 +1037,7 @@
                   <td>Chaqueta cuero 8</td>
                   <td>X</td>
                   <td>$ 150.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -1007,6 +1054,7 @@
                   <td>Chaqueta cuero 9</td>
                   <td>X</td>
                   <td>$ 150.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -1023,6 +1071,7 @@
                   <td>Chaqueta cuero 10</td>
                   <td>X</td>
                   <td>$ 150.000</td>
+                  <td>10</td>
                   <td><span class="badge rounded-pill bg-success">Nuevo</span></td>
                   <td>
                     <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#agregarProducto"
@@ -1041,6 +1090,7 @@
                   <th>Producto</th>
                   <th>Talla</th>
                   <th>Precio</th>
+                  <th>Cantidad</th>
                   <th>Estado</th>
                   <th>Acciones</th>
                 </tr>
@@ -1051,7 +1101,7 @@
 
 
         <!-- Modal -->
-        <div class="modal fade" id="agregarProducto" tabindex="-1" aria-labelledby="agregarProductoLabel"
+        <div class="modal fade" id="agregarProducto" tabpanel="-1" aria-labelledby="agregarProductoLabel"
           aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">

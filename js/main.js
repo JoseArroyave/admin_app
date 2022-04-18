@@ -6,7 +6,7 @@ $(document).ready(function () {
       'success'
     )
     setTimeout(function () {
-      window.location.href = '/admin_app/index.html'
+      window.location.href = '/admin_app/panel.html'
     }, 2000)
   }
 
@@ -41,14 +41,16 @@ $(document).ready(function () {
   var path = window.location.pathname
 
   // Paginación 
-  if (path == '/admin_app/index.html') {
-    var tableId = '#priceTable'
-  } else if (path == '/admin_app/') {
+  if (path == '/admin_app/panel.html') {
     var tableId = '#priceTable'
   } else if (path == '/admin_app/categorias.html') {
     var tableId = "#categoryTable"
   } else if (path == '/admin_app/inventario.html') {
     var tableId = "#lastProductsTable"
+  } else if (path == '/admin_app/pedidos.html') {
+    var tableId = "#pedidos"
+  } else if (path == '/admin_app/cupones.html') {
+    var tableId = "#cupones"
   }
 
   // Paginacion según table id
@@ -136,6 +138,15 @@ $(document).ready(function () {
       'Cancelado',
       'Categoría no añadida',
       'error'
+    )
+  })
+
+  $('#btnActualizar').on('click', function (e) {
+    e.preventDefault();
+    Swal.fire(
+      'Actualizado!',
+      'Recuerda que este proyecto se especiliza en el aprendizaje de Bootstrap 5, por tanto, esta actualización no aparecerá. Para hacerlo se necesita un backend que permita actualizar los datos en la base de datos y una llamada ajax para mostrarlos.',
+      'success'
     )
   })
 })
