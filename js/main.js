@@ -6,7 +6,7 @@ $(document).ready(function () {
       'success'
     )
     setTimeout(function () {
-      window.location.href = '/index.html'
+      window.location.href = '/admin_app/index.html'
     }, 2000)
   }
 
