@@ -1,7 +1,37 @@
 $(document).ready(function () {
+  var redirigir = function () {
+    Swal.fire(
+      'Muchas gracias!',
+      'En un momento serás redirigido',
+      'success'
+    )
+    setTimeout(function () {
+      window.location.href = '/index.html'
+    }, 2000)
+  }
+
   $('.btnIngresar').on('click', function (e) {
     e.preventDefault();
+    var emailIngreso = $('#emailIngreso')[0].value
+    console.log(emailIngreso)
+    var passwordIngreso = $('#passwordIngreso')[0].value
+    console.log(passwordIngreso)
+    if (emailIngreso == '' || passwordIngreso == '') {
+      Swal.fire(
+        'Error!',
+        'No puedes enviar campos vacíos',
+        'error'
+      )
+    } else {
+      redirigir()
+    }
   })
+
+  $('.btnIngresarInvitado').on('click', function (e) {
+    e.preventDefault();
+    redirigir()
+  })
+
   $('.btnNavbarBuscar').on('click', function (e) {
     e.preventDefault();
     var aBuscar = $('#navbarBuscar')[0].value
@@ -17,7 +47,7 @@ $(document).ready(function () {
     var tableId = '#priceTable'
   } else if (path == '/admin_app/categorias.html') {
     var tableId = "#categoryTable"
-  } else if (path == '/admin_app/productos.html') {
+  } else if (path == '/admin_app/inventario.html') {
     var tableId = "#lastProductsTable"
   }
 
